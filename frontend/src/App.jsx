@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button"
+import { Outlet } from "react-router-dom"
+import Header from "./components/component/Header.jsx"
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <>
+     <Header/>
+      <Outlet/>
+    </>
   )
 }
